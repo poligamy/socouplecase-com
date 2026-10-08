@@ -66,6 +66,23 @@
       <div class="cta-row"><button class="btn primary" id="addBtn" disabled>Add pair to cart · <span id="price">Rp149rb</span></button></div>
     </div>
   </div>
+  <div class="card" style="margin-top:18px">
+    <p class="kicker">ANTI-SLOP CHECK — EVERY BRIEF, SCORED</p>
+    <h3>Is your brief original, or generic AI slop?</h3>
+    <p class="fine">AI studios easily become slop factories (“something cute aesthetic viral!!”). Paste your design brief — the checker scores clichés, vague filler, and spam, and rewards personal details. Studio standard: <b>ORIGINAL only</b>. Anything else goes back to a human designer.</p>
+    <div class="grid2">
+      <div>
+        <label for="briefInput">YOUR DESIGN BRIEF</label>
+        <textarea id="briefInput" rows="5" style="width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit" placeholder="e.g. Half-heart line art, our initials, the coordinates where we met…"></textarea>
+        <div class="chips"><button class="chip bchip" data-sample="original">sample: original</button><button class="chip bchip" data-sample="generic">sample: generic</button><button class="chip bchip" data-sample="slop">sample: slop</button></div>
+      </div>
+      <div>
+        <div class="gauge" style="text-align:center"><div class="gauge-num" id="briefScore" style="font-size:44px;font-weight:800">--</div><div class="verdict" id="briefVerdict" style="font-weight:800;letter-spacing:.1em">WAITING</div><p class="fine" id="briefMeta">paste your design brief…</p></div>
+        <div id="briefSigs"></div>
+        <p class="fine" id="briefTip" style="margin-top:10px;font-weight:600"></p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- CATALOG -->
@@ -132,5 +149,6 @@
 
 <footer><div class="foot-grid"><div><b>SoCoupleCase</b><p>SoCoupleCase Studio · Jakarta, Indonesia.<br />Matching cases, designed by you + AI.</p></div><div><b>Shop</b><br /><a href="#studio">AI Studio</a> · <a href="#catalog">Catalog</a> · <a href="#faq">FAQ</a></div><div><b>Legal</b><br /><a href="./about.html">About</a> · <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a></div></div><p class="fine">© 2026 SoCoupleCase Studio · hello@socouplecase.com</p></footer>
 <script src="./studio.js"></script>
+<script src="./slop.js"></script>
 </body>
 </html>
